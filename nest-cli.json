@@ -1,0 +1,29 @@
+{
+  "collection": "@nestjs/schematics",
+  "monorepo": true,
+  "root": "./",
+  "sourceRoot": "src",
+  "entryFile": "main",
+  "compilerOptions": {
+    "webpack": false,
+    "tsConfigPath": "tsconfig.json"
+  },
+  "projects": {
+    "hello": {
+      "type": "application",
+      "sourceRoot": "src",
+      "entryFile": "modules/hello/main",
+      "nodeExternalsParams": {
+        "additionalModuleDirs": ["./node_modules"]
+      }
+    },
+    "foo": {
+      "type": "application",
+      "sourceRoot": "src",
+      "entryFile": "modules/foo/main",
+      "nodeExternalsParams": {
+        "additionalModuleDirs": ["./node_modules"]
+      }
+    }
+  }
+}
