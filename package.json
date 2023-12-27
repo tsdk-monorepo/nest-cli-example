@@ -6,7 +6,7 @@
     "@nestjs/cli": "^10.2.1",
     "@types/express": "^4.17.21",
     "@types/node": "^20.9.1",
-    "tsdk": "0.0.20-beta.13",
+    "tsdk": "^0.0.32",
     "typescript": "^5.2.2"
   },
   "dependencies": {
